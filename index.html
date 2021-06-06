@@ -1,0 +1,587 @@
+<!DOCTYPE html>     <!----- definición de html 5 -->          
+<html lang="es"> 	<!----- definición del lenguaje -->  
+					<!------Inicio del  HEAD -->
+<head>
+  <title>Apasionados por la comida Vegana - Veganex</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">  
+	<!----- viewport para apple device-width = ancho pantalla initial-scale es que inicia sin ningún zoom --> 
+    <link rel="apple-touch-icon" href="assets/img/apple-icon.png">
+	<!----- icono para apple y safari --> 
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
+    <!-- Load Require CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+	    <!-- iconos  -->
+    <link href="assets/css/boxicon.min.css" rel="stylesheet">
+	    <!-- tipo de letra -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">		<!-- carga CSS -->
+    <link rel="stylesheet" href="assets/css/estilos.css">
+</head>
+<!------------------------------------------------------------------ Fin del  HEAD -->
+<body>
+    <!-- Header 
+	nav = cuyo propósito es proporcionar enlaces de navegación, ya sea dentro del documento actual 
+	o a otros documentos
+	-->
+
+    <nav id="main_nav" class="navbar navbar-expand-lg navbar-dark bg-header shadow">
+	
+	<!--navbar-expand-lg = envoltorio para que el navbar se estire en lg
+	navbar-light = texto negro de la letra
+	bg-white = fondo de color blanco
+	-->
+
+        <div class="container d-flex justify-content-between align-items-center">
+		
+            <a class="navbar-brand h1" href="index.html">
+			<!--navbar-brand = clase se utiliza para resaltar la marca o logotipo de su página-->	
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="30" height="30" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 897 1024"><path d="M768.338 896h-64v19q0 53-29.5 84.5t-71.5 22.5l-502-99q-42-8-71.5-51t-29.5-96V128q0-53 37.5-90.5t90.5-37.5h640q53 0 90.5 37.5t37.5 90.5v640q0 53-37.5 90.5t-90.5 37.5zm-640-479q0 46 30 84q4 6 21.5 19t31 27.5t13.5 28.5v128q0 15 31.5 27.5t96.5 28.5q39 10 67.5 7.5t44.5-11.5t16-20V608q0-14 13.5-26.5t32-22.5t21.5-13q5-4 14.5-9t12-10.5t2.5-19.5q0-45-29-83t-69-46q-25-5-47 5q-30-51-79.5-61t-78.5 29q-23-18-47-23q-41-8-69.5 18t-28.5 71zm704-243q0-46-32.5-78t-77.5-32h-465l346 68q42 9 71.5 52t29.5 95v553h18q45 0 77.5-32.5t32.5-77.5V174z" fill="white"/><rect x="0" y="0" width="897" height="1024" fill="rgba(0, 0, 0, 0)" /></svg>	        <span class="text-dark h4"></span><span class="text-light h4">Veganex</span></a>
+			
+			<!--	boton de hamburguesa --> 
+  	          <button class="navbar-toggler border-0 text-light" 
+				type="button" data-bs-toggle="collapse" 
+				data-bs-target="#navbar-toggler-success" 
+				aria-controls="navbarSupportedContent" 
+				aria-expanded="false" 
+				aria-label="Toggle navigation">
+				<span style="color: #FFF;" class="navbar-toggler-icon">
+				</span>
+            </button>
+		<!------------------------------------------- Opciones del Menu		-->
+		<div class="align-self-center collapse navbar-collapse flex-fill  d-lg-flex justify-content-lg-between" 
+		id="navbar-toggler-success">
+		
+		<!-------collapse navbar-collapse= para agrupar y ocultar el contenido de la barra de navegación 
+		por un punto de interrupción principal.
+		flex-fill = obliga a que todos los elementos tengan el mismo tamaño de ancho
+		d-lg-flex = utilidades para crear un contenedor flexbox y transforme los elementos secundarios 
+		directos en elementos flexibles
+		-->
+  		              <div class="flex-fill mx-xl-5 mb-2">
+				<!--	  mx=para clases que establecen tanto *-lefty*-right-->
+ 	                   <ul class="nav navbar-nav d-flex justify-content-end text-center text-dark">
+					<!--   .navbar-nav para una navegación ligera y de altura completa 
+					   (incluida la compatibilidad con menús desplegables).-->
+                        
+                        <li class="nav-item">
+                            <a class="nav-link btn-underline px-3 text-light" href="/nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn-underline px-3 text-light" href="/recetas.html">Recetas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn-underline px-3 text-light" href="/cursos.html">Cursos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn-underline px-3 text-light" href="/contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+
+<!---------------------------------------------------------Fin de las opciones del menu
+------------------------------------------------------------ Inicio de los iconos del menu-->
+                <div class="navbar d-flex justify-content-center">                    
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="30" height="30" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><g fill="none"><path d="M4.051 8.92A1 1 0 0 1 5.048 8h13.904a1 1 0 0 1 .997.92l.877 10.92A2 2 0 0 1 18.833 22H5.167a2 2 0 0 1-1.993-2.16L4.05 8.92z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M16 11V6a4 4 0 0 0-4-4v0a4 4 0 0 0-4 4v5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></g><rect x="0" y="0" width="24" height="24" fill="rgba(0, 0, 0, 0)" /></svg>				    <!--	https://iconify.design/icon-sets/bx/-->
+                </div>
+            </div>
+        </div>
+    </nav>
+<!----------------------------------------------------------- Fin de los iconos del menu
+
+    <!-- Close Header -->
+ <!----------------------------------------------------------- Fin del Header-->
+
+    <!-- Start Banner Hero -->
+    <div class="banner-wrapper bg-light">
+        <div id="index_banner" class="banner-vertical-center-index container-fluid pt-5">
+
+            <!-- Start slider -->
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
+                    <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
+                    <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" ></li>
+                </ol>
+ <!-- class="active" Se requiere un elemento activo inicial
+La .activeclase debe agregarse a una de las diapositivas. De lo contrario, el carrusel no será visible. -->
+				
+                <div class="carousel-inner">
+				
+<!-- Primer elemento del carrousel 
+Ver: https://getbootstrap.com/docs/4.0/components/carousel/  -->				
+
+                    <div class="carousel-item active">
+
+                 <div class="row d-flex align-items-center">
+                  <div class="banner-content col-lg-8 col-8 offset-2 m-lg-auto text-left py-5 pb-5">
+                    <h1 class="banner-title banner-heading h1 text-white display-3 mb-0 pb-5 mx-0 px-0 light-300 typo-space-line">
+					
+                                    Productos <strong>100%</strong> naturales y orgánicos </h1>
+                                <p class="banner-body text-light py-3 mx-0 px-0">
+                                    Ofrecemos productos sanos, de gran calidad y de fácil preparación. Mejoramos la calidad de vida a través de la alimentación. 
+                                </p>
+                                <a class="banner-button btn btn-carousel btn-lg px-4" 
+								href="#" role="button">Ver productos</a>
+                                
+                            </div>
+                        </div>
+
+                    </div>
+ <!----------------------------------------------------------- Nuevo ITem del Carrousel-->
+
+                    <div class="carousel-item">
+
+                        <div class="row d-flex align-items-center">
+                            <div class="banner-content col-lg-8 col-8 offset-2 m-lg-auto text-left py-5 pb-5">
+                                <h1 class="banner-title banner-heading h1 text-white display-3 mb-0 pb-3 mx-0 px-0 light-300 typo-space-line mb-5">
+                                    Encontranos en todo el pais
+                                </h1>
+                                <p class="banner-body text-light py-5 my-5">
+                                    Contamos con más de 100 sucurcales en todo Argentina. Encontrá la más cercana aquí.
+                                </p>
+                                <a class="banner-button btn btn-carousel btn-lg px-4" 
+								href="#" role="button">Puntos de venta</a>
+					 <!--role="button" indica que un boton no apunta a una url sino que hace otra cosa-->	
+                            </div>
+                        </div>
+
+                    </div>
+ <!----------------------------------------------------------- Nuevo ITem del Carrousel-->					
+                    <div class="carousel-item">
+
+                        <div class="row d-flex align-items-center">
+                            <div class="banner-content col-lg-8 col-8 offset-2 m-lg-auto text-left py-5 pb-5">
+                                <h1 class="banner-title banner-heading h1 text-white display-3 mb-0 pb-3 mx-0 px-0 light-300 typo-space-line mb-5">
+                                    Marcamos la diferencia.
+                                </h1>
+                                <p class="banner-body text-light py-3">
+                                    Desde 1920 ponemos toda nuestra pasión en la comida vegana llevando calidad a todos los hogares. 
+                                </p>
+                                <a class="banner-button btn btn-carousel btn-lg px-4" 
+								href="/contacto.html" role="button">Contacto</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+    <!-------------------------------------------------------Flechas del carrousel   -->
+                <a class="carousel-control-prev text-decoration-none" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
+                    <i class='bx bx-chevron-left'></i>
+                    <span class="visually-hidden">Ant.</span>
+                </a>
+                <a class="carousel-control-next text-decoration-none" href="#carouselExampleIndicators" role="button" data-bs-slide="next">
+                    <i class='bx bx-chevron-right'></i>
+                    <span class="visually-hidden">Prox.</span>
+                </a>
+            </div>
+			 <!-- bx-chevron-right y left son las puntas de flecha del carrousel -->
+            <!-- End slider -->
+
+        </div>
+    </div>
+    <!-- End Banner Hero -->
+	
+    <!-- Start Service -->
+    <section class="service-wrapper py-3">
+        <div class="container-fluid pb-3">
+            <div class="row">
+                <h2 class="h2 text-center col-12 py-5 semi-bold-600">Productos más vendidos</h2>
+                <p class="text-center pb-3 text-muted px-2">
+                    Contamos con la más amplia variedad de productos para compatir en tus comidas. Encuentralas en el siguiente clasificador.
+                 </p>                      
+            </div>
+            
+        </div>
+        <svg height="100%" width="100%" id="svg" viewBox="0 80 1440 80" xmlns="http://www.w3.org/2000/svg" class="transition duration-300 ease-in-out delay-150"><defs><linearGradient id="gradient"><stop offset="5%" stop-color="#2b762088"></stop><stop offset="95%" stop-color="#0693e388"></stop></linearGradient></defs><path d="M 0,400 C 0,400 0,133 0,133 C 75.71282051282051,125.62307692307692 151.42564102564103,118.24615384615385 230,124 C 308.574358974359,129.75384615384615 390.0102564102565,148.63846153846154 477,149 C 563.9897435897435,149.36153846153846 656.5333333333334,131.20000000000002 730,132 C 803.4666666666666,132.79999999999998 857.8564102564102,152.56153846153845 937,150 C 1016.1435897435898,147.43846153846155 1120.0410256410257,122.55384615384617 1208,116 C 1295.9589743589743,109.44615384615383 1367.979487179487,121.22307692307692 1440,133 C 1440,133 1440,400 1440,400 Z" stroke="none" stroke-width="0" fill="url(#gradient)" class="transition-all duration-300 ease-in-out delay-150"></path><defs><linearGradient id="gradient"><stop offset="5%" stop-color="#2b7620ff"></stop><stop offset="95%" stop-color="#0693e3ff"></stop></linearGradient></defs><path d="M 0,400 C 0,400 0,266 0,266 C 61.93333333333334,286.85897435897436 123.86666666666667,307.71794871794873 205,305 C 286.1333333333333,302.28205128205127 386.4666666666667,275.9871794871795 476,266 C 565.5333333333333,256.0128205128205 644.2666666666667,262.3333333333333 713,263 C 781.7333333333333,263.6666666666667 840.4666666666667,258.6794871794872 922,258 C 1003.5333333333333,257.3205128205128 1107.8666666666666,260.9487179487179 1198,263 C 1288.1333333333334,265.0512820512821 1364.0666666666666,265.52564102564105 1440,266 C 1440,266 1440,400 1440,400 Z" stroke="none" stroke-width="0" fill="url(#gradient)" class="transition-all duration-300 ease-in-out delay-150"></path></svg>        <div class="service-tag py-5 bg-hero">
+            <div class="col-md-12">
+                <ul class="nav d-flex justify-content-center">
+                    <li class="nav-item mx-lg-4">
+                        <a class="boton-hero filter-btn nav-link btn-outline active shadow text-light px-4 
+						light-300" href="#" data-filter=".project">Todo</a>
+				<!-- btn-outline = boton transparente -->
+                    </li>
+                    <li class="nav-item mx-lg-4">
+                        <a class="filter-btn nav-link btn-outline text-light px-4 light-300" 
+						href="#" data-filter=".pastas">Pastas</a>
+                    </li>
+                    <li class="filter-btn nav-item mx-lg-4">
+                        <a class="filter-btn nav-link btn-outline text-light px-4 light-300" 
+						href="#" data-filter=".embutidos">Embutidos</a>
+                    </li>
+                    <li class="nav-item mx-lg-4">
+                        <a class="filter-btn nav-link btn-outline text-light px-4 light-300" 
+						href="#" data-filter=".postres">Postres</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="container overflow-hidden py-5">
+        <div class="row gx-5 gx-sm-3 gx-lg-5 gy-lg-5 gy-3 pb-3 projects">
+
+            <!-- Comienzan los trabajos recientes -->
+            <div class="col-xl-3 col-md-4 col-sm-6 project embutidos">
+                <a href="#" class="service-work card border-0 text-white shadow-sm overflow-hidden mx-5 m-sm-0">
+                    <img class="service card-img" src="./assets/img/services-01.jpg" alt="Card image">
+                    <div class="service-work-vertical card-img-overlay d-flex align-items-end">
+                        <div class="service-work-content text-left text-light">
+                            <span class="btn btn-menu mb-lg-3 px-lg-4 light-300">Salchichas de Soja</span>
+                        </div>
+                    </div>
+                </a>
+            </div><!-- End Recent Work -->
+
+            <!-- Start Recent Work -->
+            <div class="col-xl-3 col-md-4 col-sm-6 project ui embutidos">
+                <a href="#" class="service-work card border-0 text-white shadow-sm overflow-hidden mx-5 m-sm-0">
+                    <img class="card-img" src="./assets/img/services-02.jpg" alt="Card image">
+                    <div class="service-work-vertical card-img-overlay d-flex align-items-end">
+                        <div class="service-work-content text-left text-light">
+                            <span class="btn btn-menu mb-lg-3 px-lg-4 light-300">Hamburguesas de Lentejas</span>
+                        </div>
+                    </div>
+                </a>
+            </div><!-- End Recent Work -->
+
+            <!-- Start Recent Work -->
+            <div class="col-xl-3 col-md-4 col-sm-6 project embutidos">
+                <a href="#" class="service-work card border-0 text-white shadow-sm overflow-hidden mx-5 m-sm-0">
+                    <img class="card-img" src="./assets/img/services-03.jpg" alt="Card image">
+                    <div class="service-work-vertical card-img-overlay d-flex align-items-end">
+                        <div class="service-work-content text-left text-light">
+                            <span class="btn btn-menu mb-lg-3 px-lg-4 light-300">Hamburguesas de Quinoa</span>
+                        </div>
+                    </div>
+                </a>
+            </div><!-- End Recent Work -->
+
+            <!-- Start Recent Work -->
+            <div class="col-xl-3 col-md-4 col-sm-6 project postres">
+                <a href="#" class="service-work card border-0 text-white shadow-sm overflow-hidden mx-5 m-sm-0">
+                    <img class="card-img" src="./assets/img/services-04.jpg" alt="Card image">
+                    <div class="service-work-vertical card-img-overlay d-flex align-items-end">
+                        <div class="service-work-content text-left text-light">
+                            <span class="btn btn-menu mb-lg-3 px-lg-4 light-300">Flan de vainilla sin huevo</span>
+                        </div>
+                    </div>
+                </a>
+            </div><!-- End Recent Work -->
+
+            <!-- Start Recent Work -->
+            <div class="col-xl-3 col-md-4 col-sm-6 project pastas">
+                <a href="#" class="service-work card border-0 text-white shadow-sm overflow-hidden mx-5 m-sm-0">
+                    <img class="card-img" src="./assets/img/services-05.jpg" alt="Card image">
+                    <div class="service-work-vertical card-img-overlay d-flex align-items-end">
+                        <div class="service-work-content text-left text-light">
+                            <span class="btn btn-menu mb-lg-3 px-lg-4 light-300">Sorrentinos de Espinaca</span>
+                        </div>
+                    </div>
+                </a>
+            </div><!-- End Recent Work -->
+
+            <!-- Start Recent Work -->
+            <div class="col-xl-3 col-md-4 col-sm-6 project postres">
+                <a href="#" class="service-work card border-0 text-white shadow-sm overflow-hidden mx-5 m-sm-0">
+                    <img class="card-img" src="./assets/img/services-06.jpg" alt="Card image">
+                    <div class="service-work-vertical card-img-overlay d-flex align-items-end">
+                        <div class="service-work-content text-left text-light">
+                            <span class="btn btn-menu mb-lg-3 px-lg-4 light-300">Pastel con leche de coco</span>
+                        </div>
+                    </div>
+                </a>
+            </div><!-- End Recent Work -->
+
+            <!-- Start Recent Work -->
+            <div class="col-xl-3 col-md-4 col-sm-6 project postres">
+                <a href="#" class="service-work card border-0 text-white shadow-sm overflow-hidden mx-5 m-sm-0">
+                    <img class="card-img" src="./assets/img/services-07.jpg" alt="Card image">
+                    <div class="service-work-vertical card-img-overlay d-flex align-items-end">
+                        <div class="service-work-content text-left text-light">
+                            <span class="btn btn-menu mb-lg-3 px-lg-4 light-300">Donas de avellana</span>
+                        </div>
+                    </div>
+                </a>
+            </div><!-- End Recent Work -->
+
+            <!-- Start Recent Work -->
+            <div class="col-xl-3 col-md-4 col-sm-6 project pastas">
+                <a href="#" class="service-work card border-0 text-white shadow-sm overflow-hidden mx-5 m-sm-0">
+                    <img class="card-img" src="./assets/img/services-08.jpg" alt="Card image">
+                    <div class="service-work-vertical card-img-overlay d-flex align-items-end">
+                        <div class="service-work-content text-left text-light">
+                            <span class="btn btn-menu mb-lg-3 px-lg-4 light-300">Ravioles de seitán</span>
+                        </div>
+                    </div>
+                </a>
+            </div><!-- End Recent Work -->
+
+        </div>
+    </section>
+    <!-- End Service -->
+
+
+
+
+
+
+    <!-- Start View Work -->
+    <section class="bg-heroDos">
+        <div class="container py-5">
+            <div class="row d-flex justify-content-center text-center">
+                <div class="col-lg-2 col-12 text-light align-items-center">
+                    <i class='display-1 bx bxs-cart bx-lg'></i>
+                </div>
+                <div class="col-lg-7 col-12 text-light pt-2">
+                    <h3 class="h4 light-300">Te llevamos el pedido a tu casa</h3>
+                    <p class="light-300">Juntos nos cuidamos.</p>
+                </div>
+                <div class="col-lg-3 col-12 pt-4">
+                    <a href="#" class="btn btn-verde rounded-pill btn-block shadow px-4 py-2">Pedidos Online</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End View Work -->
+
+    <!-- Start Recent Work -->
+    <section class="py-5 mb-5">
+        <div class="container">
+            <div class="recent-work-header row text-center pb-5">
+                <h2 class="col-md-6 m-auto h2 semi-bold-600 py-5">BLOG</h2>
+            </div>
+            <div class="row gy-5 g-lg-5 mb-4">
+
+                <!-- Start Recent Work -->
+                <div class="col-md-4 mb-3">
+                    <a href="#" class="recent-work card border-0 shadow-lg overflow-hidden">
+                        <img class="recent-work-img card-img" src="./assets/img/recent-work-01.jpg" alt="Card image">
+                        <div class="recent-work-vertical card-img-overlay d-flex align-items-end">
+                            <div class="recent-work-content text-start mb-3 ml-3 text-dark">
+                                <h3 class="card-title light-300">¿Es buena la leche?</h3>
+                                <p class="card-text">Una correcta alimentación es fundamental para...</p>
+                            </div>
+                        </div>
+                    </a>
+                </div><!-- End Recent Work -->
+
+                <!-- Start Recent Work -->
+                <div class="col-md-4 mb-3">
+                    <a href="#" class="recent-work card border-0 shadow-lg overflow-hidden">
+                        <img class="recent-work-img card-img" src="./assets/img/recent-work-02.jpg" alt="Card image">
+                        <div class="recent-work-vertical card-img-overlay d-flex align-items-end">
+                            <div class="recent-work-content text-start mb-3 ml-3 text-dark">
+                                <h3 class="card-title light-300">Mitos de la Soja</h3>
+                                <p class="card-text">¿Realmente es tan buena como se piensa?</p>
+                            </div>
+                        </div>
+                    </a>
+                </div><!-- End Recent Work -->
+
+                <!-- Start Recent Work -->
+                <div class="col-md-4 mb-3">
+                    <a href="#" class="recent-work card border-0 shadow-lg overflow-hidden">
+                        <img class="recent-work-img card-img" src="./assets/img/recent-work-03.jpg" alt="Card image">
+                        <div class="recent-work-vertical card-img-overlay d-flex align-items-end">
+                            <div class="recent-work-content text-start mb-3 ml-3 text-dark">
+                                <h3 class="card-title light-300">3 Tips para bajar de peso</h3>
+                                <p class="card-text">No todo en la dieta son calorias...</p>
+                            </div>
+                        </div>
+                    </a>
+                </div><!-- End Recent Work -->
+
+                <!-- Start Recent Work -->
+                <div class="col-md-4 mb-3">
+                    <a href="#" class="recent-work card border-0 shadow-lg overflow-hidden">
+                        <img class="recent-work-img card-img" src="./assets/img/recent-work-04.jpg" alt="Card image">
+                        <div class="recent-work-vertical card-img-overlay d-flex align-items-end">
+                            <div class="recent-work-content text-start mb-3 ml-3 text-dark">
+                                <h3 class="card-title light-300">Anemia y el veganismo</h3>
+                                <p class="card-text">¿Se puede vivir sin comer carne?</p>
+                            </div>
+                        </div>
+                    </a>
+                </div><!-- End Recent Work -->
+
+                <!-- Start Recent Work -->
+                <div class="col-md-4 mb-3">
+                    <a href="#" class="recent-work card border-0 shadow-lg overflow-hidden">
+                        <img class="recent-work-img card-img" src="./assets/img/recent-work-05.jpg" alt="Card image">
+                        <div class="recent-work-vertical card-img-overlay d-flex align-items-end">
+                            <div class="recent-work-content text-start mb-3 ml-3 text-dark">
+                                <h3 class="card-title light-300">Maquillajes Veganos</h3>
+                                <p class="card-text">Muchas cremas y maquillajes estan testeados con...</p>
+                            </div>
+                        </div>
+                    </a>
+                </div><!-- End Recent Work -->
+
+                <!-- Start Recent Work -->
+                <div class="col-md-4 mb-3">
+                    <a href="#" class="recent-work card border-0 shadow-lg overflow-hidden">
+                        <img class="recent-work-img card-img" src="./assets/img/recent-work-06.jpg" alt="Card image">
+                        <div class="recent-work-vertical card-img-overlay d-flex align-items-end">
+                            <div class="recent-work-content text-start mb-3 ml-3 text-dark">
+                                <h3 class="card-title light-300">Mi historia</h3>
+                                <p class="card-text">¿Cuándo empecé mi cambio al veganismo?</p>
+                            </div>
+                        </div>
+                    </a>
+                </div><!-- End Recent Work -->
+
+            </div>
+        </div>
+    </section>
+    <!-- End Recent Work -->
+
+
+
+    <!-- Start Footer -->
+    <footer class="bg-footer pt-4">
+        <div class="container">
+            <div class="row py-4">
+
+                <div class="col-lg-3 col-12 align-left">
+                    <a class="navbar-brand" href="index.html">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="30" height="30" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 897 1024"><path d="M768.338 896h-64v19q0 53-29.5 84.5t-71.5 22.5l-502-99q-42-8-71.5-51t-29.5-96V128q0-53 37.5-90.5t90.5-37.5h640q53 0 90.5 37.5t37.5 90.5v640q0 53-37.5 90.5t-90.5 37.5zm-640-479q0 46 30 84q4 6 21.5 19t31 27.5t13.5 28.5v128q0 15 31.5 27.5t96.5 28.5q39 10 67.5 7.5t44.5-11.5t16-20V608q0-14 13.5-26.5t32-22.5t21.5-13q5-4 14.5-9t12-10.5t2.5-19.5q0-45-29-83t-69-46q-25-5-47 5q-30-51-79.5-61t-78.5 29q-23-18-47-23q-41-8-69.5 18t-28.5 71zm704-243q0-46-32.5-78t-77.5-32h-465l346 68q42 9 71.5 52t29.5 95v553h18q45 0 77.5-32.5t32.5-77.5V174z" fill="white"/><rect x="0" y="0" width="897" height="1024" fill="rgba(0, 0, 0, 0)" /></svg>	        <span class="text-dark h4"></span><span class="text-light h4">Veganex</span></a>
+                    </a>
+                    <p class="text-light my-lg-4 my-2">
+                        Desde 1920 ayudando en la alimentación conciente y natural de cada familia en Argentina.
+                    </p>
+                    <ul class="list-inline footer-icons light-300">
+                        <li class="list-inline-item m-0">
+                            <a class="text-light" target="_blank" href="http://facebook.com/">
+                                <i class='bx bxl-facebook bx-md'></i>
+                            </a>
+                        </li>
+                        
+                        <li class="list-inline-item m-0">
+                            <a class="text-light" target="_blank" href="https://www.whatsapp.com/">
+                                <i class='bx bxl-whatsapp bx-md'></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item m-0">
+                            <a class="text-light" target="_blank" href="https://www.flickr.com/">
+                                <i class='bx bxl-instagram bx-md'></i>
+                            </a>
+                        </li>
+                        
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-4 my-sm-0 mt-4">
+                    <h3 class="h4 pb-lg-3 text-light light-300">Link del sitio</h2>                        
+                        <ul class="list-unstyled text-light light-300">                           
+                            <li class="pb-2">
+                                <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" 
+								href="/nosotros.html">Nosotros</a>
+                            </li>
+                            <li class="pb-2">
+                                <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" 
+								href="/recetas.html">Recetas</a>
+                            </li>
+                            <li class="pb-2">
+                                <i class='bx-fw bx bxs-chevron-right bx-xs'></i></i><a class="text-decoration-none text-light py-1" 
+								href="cursos.html">Cursos</a>
+                            </li>
+                            <li class="pb-2">
+                                <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" 
+								href="contacto.html">Contacto</a>
+                            </li>
+                        </ul>
+                </div>
+
+                
+
+                <div class="col-lg-3 col-md-4 my-sm-0 mt-4">
+                    <h2 class="h4 pb-lg-3 text-light light-300">Atendemos en:</h2>
+                    <ul class="list-unstyled text-light light-300">
+                        <li class="pb-2">
+                            <i class='bx-fw bx bx-phone bx-xs'></i><a class="text-decoration-none text-light py-1" 
+							href="tel:010-020-0340">011-2354-4568</a>
+                        </li>
+                        <li class="pb-2">
+                            <i class='bx-fw bx bx-mail-send bx-xs'></i><a class="text-decoration-none text-light py-1"
+							href="mailto:info@company.com">hola@veganex.com</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-4 my-sm-0 mt-4">
+                    <h2 class="h4 pb-lg-3 text-light light-300">Legal</h2>
+                    <ul class="list-unstyled text-light light-300">
+                        <li class="pb-2">
+                            <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" 
+							href="#">Políticas de privacidad</a>
+                        </li>
+                        <li class="pb-2">
+                            <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" 
+							href="#">Aviso legal</a>
+                        </li>
+                        <li class="pb-2">
+                            <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" 
+							href="#">Política de Cookies</a>
+                        </li>                      
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="w-100 bg-second-footer">
+            <div class="container">
+                <div class="row pt-3">
+                    <div class="col-lg-6 col-sm-12">
+                        <p class="text-lg-start text-center text-light light-300">
+                            © Copyright 2021 Veganex. Todos los derechos reservados.
+                        </p>
+                    </div>
+                    <div class="col-lg-6 col-sm-12">
+                        <p class="text-lg-end text-center text-light light-300">
+                            Diseñado por <a rel="sponsored" class="text-decoration-none text-light" 
+							href="https://nicobobb.com/" target="_blank"><strong>Nico Bobb</strong></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <!-- End Footer -->
+
+
+    <!-- Bootstrap -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!-- Load jQuery require for isotope -->
+    <script src="assets/js/jquery.min.js"></script>
+   <!-- Isotope -->
+    <script src="assets/js/isotope.pkgd.js"></script>
+    <!-- Page Script -->
+    <script>
+        $(window).load(function() {
+            // init Isotope
+            var $projects = $('.projects').isotope({
+                itemSelector: '.project',
+                layoutMode: 'fitRows'
+            });
+            $(".filter-btn").click(function() {
+                var data_filter = $(this).attr("data-filter");
+                $projects.isotope({
+                    filter: data_filter
+                });
+                $(".filter-btn").removeClass("active");
+                $(".filter-btn").removeClass("shadow");
+                $(this).addClass("active");
+                $(this).addClass("shadow");
+                return false;
+            });
+        });
+    </script>	
+ 
+   
+</body>
+
+</html>
